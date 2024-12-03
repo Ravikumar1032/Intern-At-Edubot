@@ -1,0 +1,110 @@
+/* Basic Page Styling */
+body {
+    background-color: #f0f0f0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Flexbox Navigation Bar */
+.navbar-nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.navbar-brand {
+    flex-grow: 1;
+}
+
+.nav-link {
+    transition: background-color 0.3s;
+}
+
+.nav-link:hover {
+    background-color: #d3d3d3;
+}
+
+/* Flexbox Layout for Main Content */
+.main-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-column {
+    flex-basis: 70%;
+}
+
+.right-column {
+    flex-basis: 30%;
+}
+
+/* CSS Grid Layout for About Page */
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+}
+
+.grid-item {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+/* Responsive Grid Layout */
+@media (max-width: 768px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Animations and Transitions */
+.cta-button {
+    animation: ctaAnimation 2s infinite alternate;
+}
+
+@keyframes ctaAnimation {
+    0% {
+        background-color: #007bff;
+        transform: scale(1);
+    }
+    100% {
+        background-color: #0056b3;
+        transform: scale(1.1);
+    }
+}
+
+/* Advanced Selectors and Pseudo-Classes */
+a[href^="http"] {
+    color: red;
+}
+
+ul li:nth-child(even) {
+    background-color: #e9ecef;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+    }
+
+    .navbar-brand {
+        text-align: center;
+    }
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.nav-item{
+    width: 100px;
+    border-radius: 10px;
+    text-align: center;
+}

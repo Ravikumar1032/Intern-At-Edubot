@@ -1,0 +1,74 @@
+/* Navbar Styles */
+.navbar {
+    background: linear-gradient(45deg, #6d00cc, #9b00e8);
+    box-shadow: 0px 10px 40px -10px rgba(0, 0, 0, 0.7);
+    height: 60px;
+
+}
+
+/* Container adjustment for better alignment */
+.container {
+    width: 800px;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-brand {
+    color: #fff !important;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.navbar-toggler {
+    border: none;
+    background: #bb36fd;
+    padding: 5px 10px;
+    border-radius: 25px;
+    color: #fff;
+}
+
+.navbar-toggler:hover,
+.navbar-toggler:focus {
+    background: #9b00e8;
+}
+
+.navbar-toggler-icon {
+    color: #fff;
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+.nav-link {
+    color: #fff !important;
+    font-size: 16px;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #eecbff !important;
+}
+
+.nav-link:focus {
+    color: #eecbff !important;
+    outline: none;
+}
+
+
+/* Dropdown Styles if needed */
+.dropdown-menu {
+    background: #fbf3ff;
+    border: none;
+    box-shadow: 0px 10px 40px -10px rgba(0, 0, 0, 0.7);
+}
+
+.dropdown-item {
+    color: #6d00cc;
+}
+
+.dropdown-item:hover {
+    background: #eecbff;
+    color: #6d00cc;
+}

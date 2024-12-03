@@ -1,0 +1,25 @@
+To your project 1 & 2, add the following things:
+
+1. Utilize SQL's CREATE TABLE statements to define the structure of the database tables required for storing weather data. Specify appropriate data types, primary keys, and foreign key relationships to ensure data integrity and consistency.
+
+2. Implement SQL triggers to automate data validation and maintain data consistency. Create triggers that fire before or after specific database events, such as inserting or updating records, to enforce business rules or perform calculations.
+
+3. Use SQL functions to encapsulate complex business logic or calculations. Define custom functions to perform tasks like data transformations, unit conversions, or statistical computations. Utilize these functions within SQL queries to simplify code and promote reusability.
+
+4. Apply normalization techniques to optimize the database design and minimize data redundancy. Identify functional dependencies and normalize the tables to achieve higher normal forms (e.g., 1NF, 2NF, 3NF). Use SQL's ALTER TABLE statements to modify the table structure as needed.
+
+5. Create entity-relationship diagrams (ERDs) to visually represent the database schema and the relationships between tables. Use ERD tools to design and communicate the database structure effectively.
+
+6. Implement referential integrity constraints using SQL's foreign key constraints. Define foreign key relationships between tables to ensure data consistency and prevent orphaned records. Use ON DELETE and ON UPDATE clauses to specify the behavior when referenced records are modified or deleted.
+
+7. Utilize SQL's data import and export functionality to migrate weather data between different databases or systems. Use SQL statements like COPY or IMPORT to load data from external files, and employ EXPORT or COPY TO statements to extract data from the database.
+
+8. Apply SQL's GROUP BY and HAVING clauses to perform advanced data aggregation and filtering. Use GROUP BY to group rows based on specific columns and apply aggregate functions to calculate summary statistics. Utilize HAVING to filter the grouped results based on additional conditions.
+
+9. Handle missing data effectively by using SQL's NULL value and related functions. Use COALESCE or CASE statements to provide default values for missing data, and employ IS NULL or IS NOT NULL conditions to filter records based on the presence or absence of values.
+
+10. Implement concurrent access control mechanisms to handle multiple users accessing the database simultaneously. Use SQL's transaction management features, such as BEGIN, COMMIT, and ROLLBACK, to ensure data consistency and integrity in a multi-user environment. Apply locking mechanisms, like row-level or table-level locks, to prevent conflicts and maintain data accuracy.
+
+11. Implement stored procedures to encapsulate complex database operations and business logic. Use SQL's CREATE PROCEDURE statement to define reusable code blocks that can be invoked by application programs or other stored procedures.
+
+12. Create stored procedures for common data retrieval tasks, such as fetching weather data for a specific location or date range. Define input parameters to accept user-supplied values and use SQL queries within the stored procedure to retrieve the requested data. Use output parameters or result sets to return the processed data to the calling program.

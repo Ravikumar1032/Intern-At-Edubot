@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="advanced_styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">My Website</a>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <div class="container mt-4">
+        <h1 class="text-center">Contact Me</h1>
+
+        <!-- Contact Information Table -->
+        <table class="table table-bordered">
+            <thead class="thead-light">
+                <tr>
+                    <th>Type</th>
+                    <th>Details</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Email</td>
+                    <td>ravikumar@example.com</td>
+                </tr>
+                <tr>
+                    <td>Phone Number</td>
+                    <td>+91 86393 72906</td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td>Payakapuram, Current office, Street no.2, BZA</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- Contact Form -->
+        <div class="container mt-4 pb-4">
+            <h1 class="text-center">Contact Me</h1>
+            <div class="row justify-content-center align-items-center">
+                <!-- Contact Image -->
+                <div class="col-md-5 text-center">
+                    <img src="https://nnss.gov/wp-content/uploads/2023/08/ContactUs_3.jpg" class="img-fluid" alt="Contact Us Image" width="400" height="400">
+                </div>
+                <!-- Contact Form -->
+                <div class="col-md-5 pt-3">
+                    <form>
+                        <div class="form-group">
+                            <label for="lastName">Full Name</label>
+                            <input type="text" class="form-control" id="lastName" placeholder="Enter your last name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" id="message" rows="4" placeholder="Enter your message"></textarea>
+                        </div>
+                        <center><button type="submit" class="btn btn-primary">Submit</button></center>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

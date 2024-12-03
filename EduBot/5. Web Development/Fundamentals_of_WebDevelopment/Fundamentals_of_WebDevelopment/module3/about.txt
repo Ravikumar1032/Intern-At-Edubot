@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Page</title>
+  <script src="scripts.js" defer></script>
+</head>
+<body>
+  <h1>About Page</h1>
+  <button id="addItemButton">Add Item</button>
+  <ul id="itemList">
+    <li>Item 1</li>
+    <li>Item 2</li>
+  </ul>
+  <p id="evenNumbers"></p>
+  <p id="sessionInfo"></p>
+  <footer>
+    <p class="footerDate"></p>
+  </footer>
+</body>
+</html>

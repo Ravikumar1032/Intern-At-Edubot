@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Page</title>
+  <script src="scripts.js" defer></script>
+</head>
+<body>
+  <h1>Contact Page</h1>
+  <form id="contactForm">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+    <br>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email">
+    <br>
+    <button type="submit">Submit</button>
+  </form>
+  <p id="squaredNumbers"></p>
+  <footer>
+    <p class="footerDate"></p>
+  </footer>
+</body>
+</html>

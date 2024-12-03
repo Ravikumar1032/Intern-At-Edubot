@@ -1,0 +1,35 @@
+{
+    "students": [
+      {
+        "id": 1,
+        "name": "Ravi kumar",
+        "grade": "A",
+        "subjects": [
+          {
+            "name": "Math",
+            "score": 95
+          },
+          {
+            "name": "Science",
+            "score": 90
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Sajida",
+        "grade": "B",
+        "subjects": [
+          {
+            "name": "Math",
+            "score": 85
+          },
+          {
+            "name": "Science",
+            "score": 88
+          }
+        ]
+      }
+    ]
+  }
+  

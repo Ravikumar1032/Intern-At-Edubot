@@ -1,0 +1,109 @@
+// scripts.js
+
+// Part 1: Basic JavaScript Integration
+// Display an alert message when the index.html page loads
+if (window.location.pathname.includes("index.html")) {
+  window.onload = function () {
+    alert("Welcome to the Index page!");
+    console.log("Page loaded");
+  };
+}
+
+// Part 2: DOM Manipulation and Event Handling
+// DOM Manipulation
+document.addEventListener("DOMContentLoaded", function () {
+  // Index page button click changes paragraph text
+  if (window.location.pathname.includes("index.html")) {
+    document
+      .getElementById("changeTextButton")
+      .addEventListener("click", function () {
+        document.getElementById("textToChange").innerText =
+          "The text has been changed!";
+      });
+
+    // Calculate and display the average of an array of numbers
+    function calculateAverage(numbers) {
+      let sum = numbers.reduce((acc, num) => acc + num, 0);
+      return sum / numbers.length;
+    }
+    let numbers = [10, 20, 30, 40, 50];
+    let average = calculateAverage(numbers);
+    document.getElementById("averageResult").innerText = "Average: " + average;
+  }
+
+  // About page button click adds a new list item
+  if (window.location.pathname.includes("about.html")) {
+    document
+      .getElementById("addItemButton")
+      .addEventListener("click", function () {
+        let ul = document.getElementById("itemList");
+        let li = document.createElement("li");
+        li.innerText = "New List Item";
+        ul.appendChild(li);
+      });
+
+    // Filter even numbers using an arrow function
+    let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    let evenNumbers = numbers.filter((num) => num % 2 === 0);
+    document.getElementById("evenNumbers").innerText =
+      "Even Numbers: " + evenNumbers.join(", ");
+
+    // Display current session information
+    let sessionInfo = sessionStorage.getItem("sessionInfo");
+    document.getElementById("sessionInfo").innerText = sessionInfo
+      ? sessionInfo
+      : "No session information available.";
+  }
+
+  // Contact page form validation
+  if (window.location.pathname.includes("contact.html")) {
+    document
+      .getElementById("contactForm")
+      .addEventListener("submit", function (event) {
+        let name = document.getElementById("name").value;
+        let email = document.getElementById("email").value;
+        if (!name || !email) {
+          alert("All fields are required!");
+          event.preventDefault();
+        }
+
+        // Higher-order function to apply a callback to each array element
+        function applyFunctionToArray(callback, array) {
+          return array.map(callback);
+        }
+        function square(num) {
+          return num * num;
+        }
+        let numbers = [1, 2, 3, 4, 5];
+        let squaredNumbers = applyFunctionToArray(square, numbers);
+        document.getElementById("squaredNumbers").innerText =
+          "Squared Numbers: " + squaredNumbers.join(", ");
+      });
+  }
+});
+
+// IIFE to set and display current date and time in footer
+(function () {
+  let currentDate = new Date();
+  document.querySelectorAll(".footerDate").forEach(function (element) {
+    element.innerText = currentDate.toLocaleString();
+  });
+})();
+
+// Part 4: Local Storage and Session Storage
+// Local Storage
+if (window.location.pathname.includes("index.html")) {
+  document.getElementById("saveButton").addEventListener("click", function () {
+    let userInput = document.getElementById("userInput").value;
+    localStorage.setItem("userInput", userInput);
+    document.getElementById("storedInput").innerText =
+      "Stored Input: " + localStorage.getItem("userInput");
+  });
+  document.getElementById("storedInput").innerText =
+    "Stored Input: " + localStorage.getItem("userInput");
+}
+
+// Session Storage
+if (window.location.pathname.includes("about.html")) {
+  sessionStorage.setItem("sessionInfo", "Current user session info.");
+}

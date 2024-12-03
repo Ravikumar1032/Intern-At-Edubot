@@ -1,0 +1,2 @@
+javac -cp .;postgresql-42.7.3.jar *.java
+java -cp .;postgresql-42.7.3.jar Main

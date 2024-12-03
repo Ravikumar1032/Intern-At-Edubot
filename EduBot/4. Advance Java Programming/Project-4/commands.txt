@@ -1,0 +1,4 @@
+
+javac -cp ".;postgresql-42.7.3.jar" PasswordGeneratorApp.java PasswordDatabase.java
+
+java -cp ".;postgresql-42.7.3.jar" PasswordGeneratorApp

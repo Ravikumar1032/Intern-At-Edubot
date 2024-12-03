@@ -1,0 +1,98 @@
+/* Global Styles */
+body {
+    background-color: #f0f0f0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Navigation Bar */
+.navbar {
+    margin-bottom: 20px;
+}
+
+/* Main Content */
+.container {
+    margin-top: 20px;
+}
+
+/* About Page Grid Layout */
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-gap: 20px;
+}
+
+.about-grid .grid-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Grid Layout */
+@media (max-width: 768px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Animation for CTA Button */
+.cta-button {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        background-color: #007bff;
+    }
+    50% {
+        transform: scale(1.1);
+        background-color: #0056b3;
+    }
+    100% {
+        transform: scale(1);
+        background-color: #007bff;
+    }
+}
+/* Navigation Link Hover Effect */
+.nav-link{
+    color: #000;
+    font-weight: bold;
+}
+.nav-link:hover {
+    transition: background-color 0.3s;
+    background-color: #e9ecef;
+}
+
+/* Sidebar Styling */
+.right-column {
+    background-color: #007bff;
+}
+
+.right-column h2 {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.right-column ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.right-column ul li a{
+    margin-bottom: 10px;
+    color: #fff !important;
+}
+
+/* Footer Styling */
+footer {
+    margin-top: 20px;
+    padding: 20px 0;
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+}
+

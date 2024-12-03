@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Multi-Page Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f0f0f0;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            display: flex;
+            background-color: #333;
+            padding: 1rem;
+            align-items: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 1rem;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        .logo {
+            flex-grow: 1;
+        }
+        .logo img {
+            height: 40px;
+        }
+        .container {
+            display: flex;
+            padding: 20px;
+        }
+        .main-content {
+            flex: 70%;
+            padding: 20px;
+        }
+        .sidebar {
+            flex: 30%;
+            padding: 20px;
+            background-color: #e0e0e0;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+            padding: 20px;
+        }
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+            animation: cta-animation 2s infinite;
+        }
+        @keyframes cta-animation {
+            0%, 100% {
+                background-color: #007BFF;
+                transform: scale(1);
+            }
+            50% {
+                background-color: #0056b3;
+                transform: scale(1.1);
+            }
+        }
+        a[href^="http"] {
+            color: red;
+        }
+        ul li:nth-child(odd) {
+            background-color: #d0d0d0;
+        }
+        @media (max-width: 600px) {
+            .container, .grid-container {
+                flex-direction: column;
+            }
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="path/to/logo.png" alt="Logo">
+        </div>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="container">
+            <div class="main-content">
+                <h1>Welcome to My Website</h1>
+                <p>Hello! My name is <strong>Abhiram Cheekala</strong>. This website is a showcase of my <em>hobbies</em> and favorite <mark>books/movies</mark>.</p>
+                <img src="img/img.jpeg" alt="A description of the image" style="width: 100%; height: auto;">
+                <br><br>
+                <button class="cta-button">Call to Action</button>
+            </div>
+            <div class="sidebar">
+                <p>This is the sidebar content.</p>
+            </div>
+        </div>
+        <hr>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="grid-container">
+            <div>
+                <h1>About Me</h1>
+                <p>Here is some text about me.</p>
+            </div>
+            <div>
+                <h2>My Hobbies</h2>
+                <ul>
+                    <li>Reading</li>
+                    <li>Traveling</li>
+                    <li>Photography</li>
+                </ul>
+            </div>
+            <div>
+                <h2>My Favorite Books</h2>
+                <ol>
+                    <li>1984 by George Orwell</li>
+                    <li>To Kill a Mockingbird by Harper Lee</li>
+                    <li>The Great Gatsby by F. Scott Fitzgerald</li>
+                </ol>
+            </div>
+            <div>
+                <img src="img/img.jpeg" alt="Another description" style="width: 100%; height: auto;">
+            </div>
+        </div>
+        <hr>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h1>Contact Me</h1>
+        <table>
+            <tr>
+                <th>Email</th>
+                <td>youremail@example.com</td>
+            </tr>
+            <tr>
+                <th>Phone Number</th>
+                <td>+123456789</td>
+            </tr>
+            <tr>
+                <th>Address</th>
+                <td>123 Your Street, Your City, Your Country</td>
+            </tr>
+        </table>
+        <form>
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name"><br><br>
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name"><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
+
+    <!-- Comments -->
+    <!-- This is the end of the Home section -->
+    <!-- This is the end of the About section -->
+    <!-- This is the end of the Contact section -->
+</body>
+</html>

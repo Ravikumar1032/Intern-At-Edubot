@@ -1,0 +1,153 @@
+
+C:\Users\n1909\OneDrive\Desktop\EduBot\Project-1\Meh>javac Item.java Customer.java Bill.java Supermarket.java
+
+C:\Users\n1909\OneDrive\Desktop\EduBot\Project-1\Meh>java Supermarket
+
+Supermarket Billing System
+1. Add Item
+2. Add Customer
+3. Generate Bill
+4. Display Items
+5. Display Customers
+6. Display Bills
+7. Save Data
+8. Load Data
+9. Exit
+Choose an option: 1
+Enter item name: Milk
+Enter item price: 1.5
+Enter item quantity: 50
+Enter item category: Dairy
+
+Supermarket Billing System
+1. Add Item
+2. Add Customer
+3. Generate Bill
+4. Display Items
+5. Display Customers
+6. Display Bills
+7. Save Data
+8. Load Data
+9. Exit
+Choose an option: 1
+Enter item name: Bread
+Enter item price: 1.0
+Enter item quantity: 100
+Enter item category: Bakery
+
+Supermarket Billing System
+1. Add Item
+2. Add Customer
+3. Generate Bill
+4. Display Items
+5. Display Customers
+6. Display Bills
+7. Save Data
+8. Load Data
+9. Exit
+Choose an option: 2
+Enter customer name: Sajida
+Enter customer contact details: 8967453210
+
+Supermarket Billing System
+1. Add Item
+2. Add Customer
+3. Generate Bill
+4. Display Items
+5. Display Customers
+6. Display Bills
+7. Save Data
+8. Load Data
+9. Exit
+Choose an option: 3
+Enter customer name for billing: Sajida
+Enter item name to purchase (or 'done' to finish):Milk
+Enter quantity: 4
+Enter item name to purchase (or 'done' to finish): Bread
+Enter quantity: 8
+Enter item name to purchase (or 'done' to finish):
+done
+Generated Bill: Bill{items=Item{name='Milk', price=1.5, quantity=46, category='Dairy'}, Item{name='Bread', price=1.0, quantity=92, category='Bakery'}, totalAmount=14.0}
+
+Supermarket Billing System
+1. Add Item
+2. Add Customer
+3. Generate Bill
+4. Display Items
+5. Display Customers
+6. Display Bills
+7. Save Data
+8. Load Data
+9. Exit
+Choose an option: 4
+Item{name='Milk', price=1.5, quantity=46, category='Dairy'}
+Item{name='Bread', price=1.0, quantity=92, category='Bakery'}
+
+Supermarket Billing System
+1. Add Item
+2. Add Customer
+3. Generate Bill
+4. Display Items
+5. Display Customers
+6. Display Bills
+7. Save Data
+8. Load Data
+9. Exit
+Choose an option: 5
+Customer{name='Sajida', contactDetails='8967453210'}
+
+Supermarket Billing System
+1. Add Item
+2. Add Customer
+3. Generate Bill
+4. Display Items
+5. Display Customers
+6. Display Bills
+7. Save Data
+8. Load Data
+9. Exit
+Choose an option: 6
+Bill{items=Item{name='Milk', price=1.5, quantity=46, category='Dairy'}, Item{name='Bread', price=1.0, quantity=92, category='Bakery'}, totalAmount=14.0}
+
+Supermarket Billing System
+1. Add Item
+2. Add Customer
+3. Generate Bill
+4. Display Items
+5. Display Customers
+6. Display Bills
+7. Save Data
+8. Load Data
+9. Exit
+Choose an option: 7
+Enter filename to save data: Bill1.txt
+Data saved successfully.
+
+Supermarket Billing System
+1. Add Item
+2. Add Customer
+3. Generate Bill
+4. Display Items
+5. Display Customers
+6. Display Bills
+7. Save Data
+8. Load Data
+9. Exit
+Choose an option: 8
+Enter filename to load data: Bill1.txt
+Data loaded successfully.
+
+Supermarket Billing System
+1. Add Item
+2. Add Customer
+3. Generate Bill
+4. Display Items
+5. Display Customers
+6. Display Bills
+7. Save Data
+8. Load Data
+9. Exit
+Choose an option: 9
+Exiting...
+
+C:\Users\n1909\OneDrive\Desktop\EduBot\Project-1\Meh>
